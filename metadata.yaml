@@ -16,9 +16,11 @@ homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
+  - sha: 8eccbc053c9e70d3e11e9f186eff192417fc3b31
+    changeNotes: Added support for Google Consent Mode.
+  # Older versions
   - sha: bc71fbccc988ea9318495e938038654d2615bff8
     changeNotes: Added license.
-  # Older versions
   - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac
     changeNotes: |2
       Use API to encode Uri.
