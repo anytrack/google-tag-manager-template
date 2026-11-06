@@ -16,9 +16,11 @@ homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
+  - sha: fda74b87ccacbd37bc7364c366e20e0bb889ac7a
+    changeNotes: Added AnyTrack Tracking Tag installation method metadata
+  # Older versions
   - sha: 8eccbc053c9e70d3e11e9f186eff192417fc3b31
     changeNotes: Added support for Google Consent Mode.
-  # Older versions
   - sha: bc71fbccc988ea9318495e938038654d2615bff8
     changeNotes: Added license.
   - sha: 3b261fe0e521b84a873e858d21446dfa4c12e6ac

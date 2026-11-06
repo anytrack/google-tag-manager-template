@@ -70,6 +70,9 @@ const callLater = require('callLater');
 const createArgumentsQueue = require('createArgumentsQueue');
 
 createArgumentsQueue('AnyTrack', 'AnyTrack.q');
+callInWindow('AnyTrack', {
+  imv: 'gtm-template',
+});
 
 const getConsentSnapshot = () => ({
   ad_storage: isConsentGranted('ad_storage'),
@@ -529,6 +532,18 @@ scenarios:
         analytics_storage: true,
         ad_user_data: false,
         ad_personalization: true
+      });
+
+  - name: Queues GTM template installer metadata before loading the tracking script
+    code: |-
+      // Queues GTM template installer metadata before loading the tracking script
+      mock('injectScript', () => {});
+
+      runCode({PropertyID: 'FTIi3VHkszpA'});
+
+      assertApi('createArgumentsQueue').wasCalledWith('AnyTrack', 'AnyTrack.q');
+      assertApi('callInWindow').wasCalledWith('AnyTrack', {
+        imv: 'gtm-template'
       });
 
 
