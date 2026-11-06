@@ -16,7 +16,7 @@ homepage: "https://anytrack.io"
 documentation: "https://readme.anytrack.io/docs/google-tag-manager"
 versions:
   # Latest version
-  - sha: fda74b87ccacbd37bc7364c366e20e0bb889ac7a
+  - sha: 2ab3fbbf67b46122f724ad51741f81938a5d7256
     changeNotes: Added AnyTrack Tracking Tag installation method metadata
   # Older versions
   - sha: 8eccbc053c9e70d3e11e9f186eff192417fc3b31
